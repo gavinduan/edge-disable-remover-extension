@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "移除特定按钮禁用属性",
+  "version": "1.0",
+  "description": "监控并移除指定按钮的disabled属性",
+  "content_scripts": [
+    {
+      "matches": ["https://link.bilibili.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
